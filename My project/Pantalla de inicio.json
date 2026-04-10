@@ -4518,6 +4518,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "BOTÓN",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4557,6 +4558,17 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "TextoPremio",
+                    "Text",
+                    "=",
+                    "\"\""
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetNumberVariable"
@@ -4640,6 +4652,83 @@
                     "=",
                     "\"Zanahorias: \" + ToString(Variable(Zanahorias))"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "TextoApuesta",
+                    "Text",
+                    "=",
+                    "\"Apuesta: \" + ToString(Variable(Apuesta))"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "CONTROL APUESTAS",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Apuesta",
+                    "<",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Apuesta",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Apuesta",
+                    ">",
+                    "Zanahorias"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Apuesta",
+                    "=",
+                    "Zanahorias"
+                  ]
                 }
               ]
             }
@@ -4685,271 +4774,153 @@
                   "parameters": []
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Zanahorias",
-                    "+",
-                    "+5"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Resultado1",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Zanahorias",
+                        "+",
+                        "Variable(Apuesta) * 10"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "TextoZanahoria",
+                        "Text",
+                        "=",
+                        "\"Zanahorias: \" + ToString(Variable(Zanahorias))"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "TextoPremio",
+                        "Text",
+                        "=",
+                        "\"¡Premio de zanahorias! +\" + ToString(Variable(Apuesta) * 10)"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "TextoPremio",
-                    "Text",
-                    "=",
-                    "\"¡Premio! +5 zanahorias\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Resultado1",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Zanahorias",
+                        "+",
+                        "Variable(Apuesta) * 4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "TextoZanahoria",
+                        "Text",
+                        "=",
+                        "\"Zanahorias: \" + ToString(Variable(Zanahorias))"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "TextoPremio",
+                        "Text",
+                        "=",
+                        "\"¡Premio de sietes! +\" + ToString(Variable(Apuesta) * 4)"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "TextoZanahoria",
-                    "Text",
-                    "=",
-                    "\"Zanahorias: \" + ToString(Variable(Zanahorias))"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Resultado1",
-                    "=",
-                    "0"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Apuesta",
-                    "=",
-                    "Variable(Apuesta) * 10"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "TextoPremio",
-                    "Text",
-                    "=",
-                    "\"¡Jackpot! +\" + ToString(Variable(Apuesta) * 10)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "TextoZanahoria",
-                    "Text",
-                    "=",
-                    "\"Zanahorias: \" + ToString(Variable(Zanahorias))"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "TextoPremio",
-                    "Text",
-                    "=",
-                    "\"Apuesta: \" + ToString(Variable(Apuesta))"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Resultado2",
-                    "=",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Apuesta",
-                    "=",
-                    "Variable(Apuesta) * 4"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "TextoPremio",
-                    "Text",
-                    "=",
-                    "\"¡Premio de sietes! +\" + ToString(Variable(Apuesta) * 4)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "TextoZanahoria",
-                    "Text",
-                    "=",
-                    "\"Zanahorias: \" + ToString(Variable(Zanahorias))"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "TextoPremio",
-                    "Text",
-                    "=",
-                    "\"Apuesta: \" + ToString(Variable(Apuesta))"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Resultado3",
-                    "=",
-                    "2"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Apuesta",
-                    "=",
-                    "Variable(Apuesta) * 2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "TextoPremio",
-                    "Text",
-                    "=",
-                    "\"¡Premio de campanas! +\" + ToString(Variable(Apuesta) * 2)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "TextoZanahoria",
-                    "Text",
-                    "=",
-                    "\"Zanahorias: \" + ToString(Variable(Zanahorias))"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "TextoPremio",
-                    "Text",
-                    "=",
-                    "\"Apuesta: \" + ToString(Variable(Apuesta))"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Apuesta",
-                    ">",
-                    "Zanahorias"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Apuesta",
-                    "=",
-                    "Zanahorias"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Apuesta",
-                    "<",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Apuesta",
-                    "=",
-                    "1"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Resultado1",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Zanahorias",
+                        "+",
+                        "Variable(Apuesta) * 2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "TextoZanahoria",
+                        "Text",
+                        "=",
+                        "\"Zanahorias: \" + ToString(Variable(Zanahorias))"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "TextoPremio",
+                        "Text",
+                        "=",
+                        "\"¡Premio de campanas! +\" + ToString(Variable(Apuesta) * 2)"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -4962,27 +4933,11 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "CANTIDAD DE ZANAHORIAS",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "TextoZanahoria",
-                    "Text",
-                    "=",
-                    "\"Zanahorias: \" + ToString(Variable(Zanahorias))"
-                  ]
-                }
-              ]
-            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -5021,10 +4976,86 @@
                     "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                   },
                   "parameters": [
+                    "TextoZanahoria",
+                    "Text",
+                    "=",
+                    "\"Zanahorias: \" + ToString(Variable(Zanahorias))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
                     "TextoApuesta",
                     "Text",
                     "=",
                     "\"Apuesta: \" + ToString(Variable(Apuesta))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "TextoPremio",
+                    "Text",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Apuesta",
+                    ">",
+                    "Variable(Zanahorias)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Apuesta",
+                    "=",
+                    "Variable(Zanahorias)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Apuesta",
+                    "<",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Apuesta",
+                    "=",
+                    "1"
                   ]
                 }
               ]
@@ -5037,6 +5068,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "SUMA APUESTAS",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5071,7 +5103,7 @@
                   "parameters": [
                     "Apuesta",
                     "<",
-                    "Zanahorias"
+                    "Variable(Zanahorias)"
                   ]
                 }
               ],
@@ -5085,6 +5117,17 @@
                     "+",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "TextoApuesta",
+                    "Text",
+                    "=",
+                    "\"Apuesta: \" + ToString(Variable(Apuesta))"
+                  ]
                 }
               ]
             }
@@ -5096,6 +5139,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "RESTA APUESTAS",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5143,6 +5187,17 @@
                     "Apuesta",
                     "-",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "TextoApuesta",
+                    "Text",
+                    "=",
+                    "\"Apuesta: \" + ToString(Variable(Apuesta))"
                   ]
                 }
               ]
