@@ -3595,6 +3595,11 @@
           "name": "Casillas",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "Jackpot",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -3843,6 +3848,23 @@
           "x": 824,
           "y": 524,
           "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 118,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Escudo_total",
+          "persistentUuid": "a11c6e73-aada-4b8a-b523-94c9bb89d5bd",
+          "width": 132,
+          "x": 1065,
+          "y": 229,
+          "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7379,6 +7401,50 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Escudo_total",
+          "persistentUuid": "e9671348-5535-417e-a74e-6f8f29e32dc3",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "0",
+          "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "0;0;0",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "0",
+            "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
+            "characterSize": 40,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -7452,6 +7518,9 @@
           },
           {
             "objectName": "WinTxt"
+          },
+          {
+            "objectName": "Escudo_total"
           }
         ]
       },
@@ -9744,7 +9813,7 @@
                 "AstroBunny",
                 "ZanahoriasRecogidas",
                 "+",
-                "1"
+                "int(1 * Jackpot)"
               ]
             },
             {
@@ -9755,7 +9824,7 @@
                 "TxtDeuda",
                 "Text",
                 "=",
-                "ToString(AstroBunny.ZanahoriasRecogidas) + \" / 5\""
+                "ToString(AstroBunny.ZanahoriasRecogidas) + \" / 7\""
               ]
             }
           ],
@@ -9770,8 +9839,8 @@
                   "parameters": [
                     "AstroBunny",
                     "ZanahoriasRecogidas",
-                    "=",
-                    "5"
+                    ">=",
+                    "7"
                   ]
                 }
               ],
@@ -10302,17 +10371,6 @@
             },
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "TxtEstrellas",
-                "Text",
-                "=",
-                "\">\""
-              ]
-            },
-            {
-              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -10329,6 +10387,27 @@
                 "Casillas",
                 "=",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Jackpot",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Escudo_total",
+                "Text",
+                "=",
+                "ToString(Escudo)"
               ]
             }
           ],
@@ -10362,6 +10441,18 @@
                     "textR": 0
                   },
                   "comment": "Los valores de las cartas estan guardados con uno menos (p.e. la carta de valor 9 -> ManoActual[Carta_turno] termina en '8')"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Las cartas rojas aun estan por determinar (de momento sirven para debugar)"
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -10946,12 +11037,6 @@
                             "=",
                             "1"
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -10972,7 +11057,7 @@
                           "parameters": [
                             "AstroBunny",
                             "GridY",
-                            "*",
+                            "+",
                             "Casillas"
                           ]
                         }
@@ -11083,12 +11168,6 @@
                             "=",
                             "2"
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -11109,7 +11188,7 @@
                           "parameters": [
                             "AstroBunny",
                             "GridY",
-                            "*",
+                            "-",
                             "Casillas"
                           ]
                         },
@@ -11276,12 +11355,6 @@
                             "=",
                             "3"
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -11302,7 +11375,7 @@
                           "parameters": [
                             "AstroBunny",
                             "GridX",
-                            "*",
+                            "-",
                             "Casillas"
                           ]
                         }
@@ -11413,12 +11486,6 @@
                             "=",
                             "4"
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -11439,7 +11506,7 @@
                           "parameters": [
                             "AstroBunny",
                             "GridX",
-                            "*",
+                            "+",
                             "Casillas"
                           ]
                         }
@@ -11896,7 +11963,382 @@
                       ]
                     }
                   ],
-                  "actions": []
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "ManoActual[Carta_turno]",
+                            "endsWith",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Jackpot",
+                            "*",
+                            "RandomFloatInRange(0.95,1.05)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "ManoActual[Carta_turno]",
+                            "endsWith",
+                            "\"1\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Jackpot",
+                            "*",
+                            "RandomFloatInRange(0.9,1.1)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "ManoActual[Carta_turno]",
+                            "endsWith",
+                            "\"2\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Jackpot",
+                            "*",
+                            "RandomFloatInRange(0.85,1.15)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "ManoActual[Carta_turno]",
+                            "endsWith",
+                            "\"3\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Jackpot",
+                            "*",
+                            "RandomFloatInRange(0.8,1.2)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "ManoActual[Carta_turno]",
+                            "endsWith",
+                            "\"4\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Jackpot",
+                            "*",
+                            "RandomFloatInRange(0.75,1.25)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "ManoActual[Carta_turno]",
+                            "endsWith",
+                            "\"5\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Jackpot",
+                            "*",
+                            "RandomFloatInRange(0.7,1.3)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "ManoActual[Carta_turno]",
+                            "endsWith",
+                            "\"6\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Jackpot",
+                            "*",
+                            "RandomFloatInRange(0.65,1.35)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "ManoActual[Carta_turno]",
+                            "endsWith",
+                            "\"7\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Jackpot",
+                            "*",
+                            "RandomFloatInRange(0.6,1.4)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "ManoActual[Carta_turno]",
+                            "endsWith",
+                            "\"8\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Jackpot",
+                            "*",
+                            "RandomFloatInRange(0.55,1.45)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "ManoActual[Carta_turno]",
+                            "endsWith",
+                            "\"9\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Jackpot",
+                            "*",
+                            "RandomFloatInRange(0.5,1.5)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "ManoActual[Carta_turno]",
+                            "endsWith",
+                            "\"10\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Jackpot",
+                            "*",
+                            "RandomFloatInRange(0.45,1.55)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "ManoActual[Carta_turno]",
+                            "endsWith",
+                            "\"11\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Jackpot",
+                            "*",
+                            "RandomFloatInRange(0.4,1.6)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Escudo",
+                            "*",
+                            "Jackpot"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Carta_turno",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Escudo_total",
+                    "Text",
+                    "=",
+                    "ToString(int(Escudo))"
+                  ]
                 }
               ]
             }
