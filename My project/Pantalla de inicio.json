@@ -627,6 +627,14 @@
         "name": "GAME DESIGN .png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "bet boton.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bet boton.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -3638,7 +3646,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6672773998329988,
+        "zoomFactor": 0.6897782140104511,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -4062,6 +4070,23 @@
           "x": -1,
           "y": 0,
           "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 145,
+          "keepRatio": true,
+          "layer": "",
+          "name": "BotonRecargar",
+          "persistentUuid": "6d14ede2-b827-44c8-91b4-9c8ed0b470f0",
+          "width": 261,
+          "x": 249,
+          "y": 562,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4614,9 +4639,9 @@
           "textAlignment": "center",
           "characterSize": 60,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -4638,7 +4663,7 @@
             "verticalTextAlignment": "top",
             "characterSize": 60,
             "lineHeight": 0,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         {
@@ -4700,9 +4725,9 @@
           "textAlignment": "center",
           "characterSize": 60,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -4724,7 +4749,7 @@
             "verticalTextAlignment": "top",
             "characterSize": 60,
             "lineHeight": 0,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         {
@@ -6439,6 +6464,66 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "BotonRecargar",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bet boton.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 84,
+                            "y": 221
+                          },
+                          {
+                            "x": 1456,
+                            "y": 221
+                          },
+                          {
+                            "x": 1456,
+                            "y": 800
+                          },
+                          {
+                            "x": 84,
+                            "y": 800
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -6488,6 +6573,9 @@
           },
           {
             "objectName": "TextoZanahoria"
+          },
+          {
+            "objectName": "BotonRecargar"
           },
           {
             "objectName": "TextoPremio"
@@ -6838,6 +6926,124 @@
           "colorR": 74,
           "creationTime": 0,
           "folded": true,
+          "name": "RECARGAR ZANAHORIAS",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "BotonRecargar",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Zanahorias",
+                    "+",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "TextoZanahoria",
+                    "Text",
+                    "=",
+                    "ToString(Variable(Zanahorias))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "TextoPremio",
+                    "Text",
+                    "=",
+                    "\"Has recargado +10 zanahorias\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
           "name": "CONTROL APUESTAS",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6904,6 +7110,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "GIRO RODILLOS",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7939,6 +8146,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "PREMIO",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8206,6 +8414,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "CANTIDAD DE ZANAHORIAS",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8340,6 +8549,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "SUMA APUESTAS",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8410,6 +8620,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "RESTA APUESTAS",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
