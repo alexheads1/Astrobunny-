@@ -15,8 +15,8 @@
     "packageName": "com.example.gamename",
     "pixelsRounding": false,
     "projectUuid": "04249cf0-c1ef-4ecc-a1c9-e8df9b4c0698",
-    "scaleMode": "linear",
-    "sizeOnStartupMode": "adaptWidth",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "version": "1.0.0",
     "name": "Pantalla de inicio",
@@ -28,7 +28,35 @@
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
-    "platformSpecificAssets": {},
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
@@ -511,6 +539,1987 @@
         "smoothed": true,
         "userAdded": false
       },
+      { 
+        "file": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/agujero_negro.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/agujero_negro.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/agujero_negro2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/agujero_negro2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/agujero_negro3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/agujero_negro3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/astro.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/astro.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/astro-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/astro-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/astrobunny-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/astrobunny-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bkg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/bkg.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/estrella.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/estrella.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/estrella2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/estrella2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/estrella3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/estrella3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gemini_Generated_Image_(8).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gemini_Generated_Image_(8).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gemini_Generated_Image_(9).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gemini_Generated_Image_(9).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gemini_Generated_Image_(10).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gemini_Generated_Image_(10).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gemini_Generated_Image_bodx73bodx73bodx.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gemini_Generated_Image_bodx73bodx73bodx.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Grey Button With Shadow_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Grey Button With Shadow_Hovered.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Grey Button With Shadow_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Grey Button With Shadow_Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Grey Button With Shadow_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Grey Button With Shadow_Pressed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Grey Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Grey Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Grey Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Grey Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Grey Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Grey Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewTiledSprite2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Purple Button With Stone Frame_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Purple Button With Stone Frame_Hovered.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Purple Button With Stone Frame_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Purple Button With Stone Frame_Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Purple Button With Stone Frame_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Purple Button With Stone Frame_Pressed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Small Grey Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Small Grey Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Small Grey Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Small Grey Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Small Grey Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Small Grey Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Small Light Grey Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Small Light Grey Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Small Light Grey Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Small Light Grey Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Small Light Grey Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Small Light Grey Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile_bkg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile_bkg.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile_bkg2.png",
+         "kind": "image",
+        "metadata": "",
+        "name": "assets/tile_bkg2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile_carr.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile_carr.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile_carr2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile_carr2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile_minig.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile_minig.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile_minigame.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile_minigame.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile_minigame2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile_minigame2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-1-1023.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-1-1023.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-1-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-1-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-2-1023.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-2-1023.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-2-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-2-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-3-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-3-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-back_hole.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-back_hole.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-black_hole-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-black_hole-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-carrot.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-carrot.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-carrot-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-carrot-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-fox.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-fox.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-fox2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-fox2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-fox3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-fox3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-fox-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-fox-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-minigame.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-minigame.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-minigame-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-minigame-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-star.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-star.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-star2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-star2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-star3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-star3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tile-star-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tile-star-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Transparent Button With White Blue Border_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Transparent Button With White Blue Border_Hovered.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Transparent Button With White Blue Border_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Transparent Button With White Blue Border_Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Transparent Button With White Blue Border_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Transparent Button With White Blue Border_Pressed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/zanahoria.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/zanahoria.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/zanahoria2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/zanahoria2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/zanahoria3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/zanahoria3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/zorro.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/zorro.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/zorro2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/zorro2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "agujero_negro.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "agujero_negro.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "agujero_negro2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "agujero_negro2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "agujero_negro3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "agujero_negro3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "astro.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "astro.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "astro-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "astro-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "astrobunny-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "astrobunny-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "bkg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bkg.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "estrella.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "estrella.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "estrella2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "estrella2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "estrella3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "estrella3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Gemini_Generated_Image_(8).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Gemini_Generated_Image_(8).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Gemini_Generated_Image_(9).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Gemini_Generated_Image_(9).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Gemini_Generated_Image_(10).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Gemini_Generated_Image_(10).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Gemini_Generated_Image_bodx73bodx73bodx.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Gemini_Generated_Image_bodx73bodx73bodx.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile_bkg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_bkg.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile_bkg2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_bkg2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile_carr.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_carr.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile_carr2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_carr2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile_minig.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_minig.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile_minigame.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_minigame.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile_minigame2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_minigame2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-1-1023.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-1-1023.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-1-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-1-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-2-1023.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-2-1023.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-2-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-2-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-3-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-3-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-back_hole.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-back_hole.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-black_hole-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-black_hole-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-carrot.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-carrot.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-carrot-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-carrot-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-fox.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-fox.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-fox2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-fox2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-fox3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-fox3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-fox-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-fox-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-minigame.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-minigame.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-minigame-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-minigame-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-star.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-star.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-star2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-star2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-star3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-star3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tile-star-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile-star-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "zanahoria.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "zanahoria.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "zanahoria2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "zanahoria2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "zanahoria3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "zanahoria3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "zorro.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "zorro.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "zorro2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "zorro2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bkg.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "bkg.png2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayButton.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/PlayButton.png\"}",
+        "name": "PlayButton",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bkg.png2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/bkg.png2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Escudo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Escudo.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Escudo2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Escudo2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Escudo3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Escudo3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Escudo4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Escudo4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Escudo5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Escudo5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Escudo6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Escudo6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Escudo7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Escudo7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Escudo8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Escudo8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Escudo9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Escudo9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Escudo10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Escudo10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Escudo11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Escudo11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Escudo12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Escudo12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Escudo13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Escudo13.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad13.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad14.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad15.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad16.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad17.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad18.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad19.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad20.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad21.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad22.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad23.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad23.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad24.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad24.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad25.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad25.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gravedad26.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Gravedad26.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jackpot.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Jackpot.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jackpot2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Jackpot2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jackpot3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Jackpot3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jackpot4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Jackpot4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jackpot5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Jackpot5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jackpot6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Jackpot6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jackpot7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Jackpot7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jackpot8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Jackpot8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jackpot9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Jackpot9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jackpot10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Jackpot10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jackpot11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Jackpot11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jackpot12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Jackpot12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jackpot13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Jackpot13.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayButton.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/PlayButton.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Propulsor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Propulsor.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Propulsor2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Propulsor2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Propulsor3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Propulsor3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Propulsor4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Propulsor4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Propulsor5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Propulsor5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Propulsor6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Propulsor6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Propulsor7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Propulsor7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Propulsor8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Propulsor8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Propulsor9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Propulsor9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Propulsor10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Propulsor10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Propulsor11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Propulsor11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Propulsor12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Propulsor12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tiled_Tiled Empty UI Heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tiled_Tiled Empty UI Heart.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tiled_Tiled Filler UI Heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tiled_Tiled Filler UI Heart.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "esc-12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "esc-12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "esc-11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "esc-11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "esc-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "esc-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "esc-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "esc-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "esc-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "esc-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "esc-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "esc-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "esc-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "esc-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "esc-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "esc-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "esc-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "esc-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "esc-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "esc-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "esc-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "esc-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "esc-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "esc-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "prop-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "prop-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "prop-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "prop-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "prop-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "prop-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "prop-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "prop-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "prop-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "prop-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "prop-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "prop-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "prop-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "prop-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "prop-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "prop-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "prop-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "prop-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "prop-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "prop-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "prop-11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "prop-11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "prop-12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "prop-12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "jack-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jack-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "jack-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jack-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "jack-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jack-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "jack-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jack-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "jack-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jack-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "jack-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jack-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "jack-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jack-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "jack-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jack-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "jack-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jack-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "jack-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jack-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "jack-11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jack-11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "jack-12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jack-12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "cont-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cont-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "cont-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cont-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "cont-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cont-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "cont-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cont-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "cont-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cont-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "cont-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cont-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "cont-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cont-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "cont-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cont-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "cont-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cont-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "cont-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cont-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "cont-11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cont-11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "cont-12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cont-12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Small Blue Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Blue Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/f80ae062891a0a4612c0160ed931165461392019f89a8545f28c195f645ebc48_Small Blue Button_Hovered.png",
+          "name": "Small Blue Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Small Blue Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Blue Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/c22b15c77047f1545806141e1129900bdc985d191b7ab5ebaae834a90c270ed2_Small Blue Button_Idle.png",
+          "name": "Small Blue Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Small Blue Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Blue Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/9e01b09016c6a200b53a55cac3cf34f083785eb6b9f55de490a71ad352858b36_Small Blue Button_Pressed.png",
+          "name": "Small Blue Button_Pressed.png"
+        }
+      },
+
       {
         "file": "alien1_show.png",
         "kind": "image",
@@ -724,6 +2733,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "CursorZanahoria",
+      "persistentUuid": "27286dd3-f1f0-49a8-ac91-3c07496326a1",
       "preScale": 0.8,
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -1526,6 +3536,41 @@
   },
   "objectsGroups": [],
   "variables": [
+    {      
+      "name": "Prob_Agujero",
+      "type": "number",
+      "value": 5
+    },
+    {
+      "name": "Prob_Minijuego",
+      "type": "number",
+      "value": 5
+    },
+    {
+      "name": "Prob_Zorro",
+      "type": "number",
+      "value": 10
+    },
+    {
+      "name": "Prob_Zanahoria",
+      "type": "number",
+      "value": 15
+    },
+    {
+      "name": "DeudaZanahorias",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "GalaxiaActual",
+      "type": "string",
+      "value": "ViaLactea"
+    },
+    {
+      "name": "SemillaPartida",
+      "type": "number",
+      "value": 0
+    },
     {
       "name": "betAlien",
       "type": "number",
