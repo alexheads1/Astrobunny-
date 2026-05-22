@@ -3732,6 +3732,21 @@
           "name": "YaPagoPremio",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "ZanahoriasMostradas",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "PremioPendiente",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "ContandoPremio",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -3739,14 +3754,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 50,
+          "height": 42,
           "keepRatio": true,
           "layer": "",
           "name": "TextoZanahoria",
           "persistentUuid": "a87cffff-6623-438b-abf2-33c06cedf3e9",
-          "width": 158,
-          "x": 321,
-          "y": 526,
+          "width": 171,
+          "x": 330,
+          "y": 534,
           "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
@@ -3829,9 +3844,9 @@
           "layer": "",
           "name": "TextoApuesta",
           "persistentUuid": "7e3e9e0f-badd-48a2-846e-58d4c3770b2b",
-          "width": 266,
-          "x": 545,
-          "y": 526,
+          "width": 200,
+          "x": 586,
+          "y": 534,
           "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
@@ -4067,8 +4082,8 @@
           "name": "Fondo",
           "persistentUuid": "d36200d0-c4f1-4b15-9290-de6629355072",
           "width": 1279,
-          "x": -1,
-          "y": 0,
+          "x": 0,
+          "y": -1,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -4087,6 +4102,40 @@
           "x": 249,
           "y": 562,
           "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 30,
+          "customSize": true,
+          "depth": 1,
+          "height": 113,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Rain",
+          "persistentUuid": "1995c63a-593e-47f9-971d-c01e2002a45e",
+          "width": 78,
+          "x": 19,
+          "y": 21,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 143,
+          "customSize": true,
+          "depth": 1,
+          "height": 113,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Rain",
+          "persistentUuid": "fcc178da-68c4-4c14-b580-259a53214fc1",
+          "width": 78,
+          "x": 1273,
+          "y": 17,
+          "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4637,7 +4686,7 @@
           "string": "Text",
           "font": "",
           "textAlignment": "center",
-          "characterSize": 60,
+          "characterSize": 40,
           "color": {
             "b": 255,
             "g": 255,
@@ -4661,7 +4710,7 @@
             "font": "",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
-            "characterSize": 60,
+            "characterSize": 40,
             "lineHeight": 0,
             "color": "255;255;255"
           }
@@ -4723,7 +4772,7 @@
           "string": "Text",
           "font": "",
           "textAlignment": "center",
-          "characterSize": 60,
+          "characterSize": 40,
           "color": {
             "b": 255,
             "g": 255,
@@ -4747,7 +4796,7 @@
             "font": "",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
-            "characterSize": 60,
+            "characterSize": 40,
             "lineHeight": 0,
             "color": "255;255;255"
           }
@@ -4944,7 +4993,7 @@
           "emitterForceMin": 1500,
           "flow": 200,
           "jumpForwardInTimeOnCreation": 0,
-          "maxParticleNb": 1000,
+          "maxParticleNb": 400,
           "name": "Rain",
           "particleAlpha1": 127,
           "particleAlpha2": 127,
@@ -4966,8 +5015,8 @@
           "particleLifeTimeMin": 0.800000011920929,
           "particleRed1": 255,
           "particleRed2": 255,
-          "particleSize1": 100,
-          "particleSize2": 100,
+          "particleSize1": 50,
+          "particleSize2": 50,
           "particleSizeRandomness1": 0,
           "particleSizeRandomness2": 0,
           "rendererParam1": 1,
@@ -6855,7 +6904,7 @@
                   "parameters": [
                     "Velocidad1",
                     "=",
-                    "8"
+                    "38"
                   ]
                 },
                 {
@@ -6865,7 +6914,7 @@
                   "parameters": [
                     "Velocidad2",
                     "=",
-                    "9"
+                    "40"
                   ]
                 },
                 {
@@ -6875,7 +6924,7 @@
                   "parameters": [
                     "Velocidad3",
                     "=",
-                    "10"
+                    "42"
                   ]
                 },
                 {
@@ -6994,41 +7043,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -8146,7 +8160,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "PREMIO",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8283,6 +8296,24 @@
                         "=",
                         "1"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "Show"
+                      },
+                      "parameters": [
+                        "Rain",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"LluviaPremio\""
+                      ]
                     }
                   ]
                 },
@@ -8341,6 +8372,24 @@
                         "YaPagoPremio",
                         "=",
                         "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Show"
+                      },
+                      "parameters": [
+                        "Rain",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"LluviaPremio\""
                       ]
                     }
                   ]
@@ -8401,7 +8450,154 @@
                         "=",
                         "1"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "Show"
+                      },
+                      "parameters": [
+                        "Rain",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"LluviaPremio\""
+                      ]
                     }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "NO PREMIO",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Girando1",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Girando2",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Girando3",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "YaPagoPremio",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Resultado1",
+                    ">=",
+                    "Variable(Resultado2)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Resultado2",
+                    ">=",
+                    "Variable(Resultado3)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "YaPagoPremio",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "EFECTO PREMIO",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"LluviaPremio\"",
+                    ">",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "Rain"
                   ]
                 }
               ]
@@ -8419,6 +8615,29 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneJustBegins"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "Rain"
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
